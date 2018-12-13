@@ -11,7 +11,7 @@ function grading (x,s,grades) {
  //Grades App
  //Variables
  let names = ["John","Nick","Lance"];
- let grades = [80,45,21];
+ let grades = [80,45,51];
  let min = 51; // Passing grade
  let pass = 0;  // Amount of passing students
  fail = 0;      //Failing students
