@@ -1,7 +1,7 @@
  //Grades App
  //Variables
- let names = ["John","Nick"];
- let grades = [80,45];
+ let names = ["John","Nick","Lance"];
+ let grades = [80,45,51];
  let min = 51; // Passing grade
  let pass = 0;  // Amount of passing students
  fail = 0;      //Failing students
@@ -26,12 +26,12 @@
 //Message for all students, if all passed or failed
 if (pass === grades.length)
 {
-	console.log("Both students passed")
+	console.log("All students passed")
 }
 
 else if (fail ===2)
 	{
-	console.log("Both students failed")
+	console.log("All students failed")
 	}
 else 
 { 
@@ -40,9 +40,15 @@ else
   for (let i = 0 ; i < grades.length ; i++)
   
   {
-    if (i < names.length - 1)
+
+     if (i == names.length - 2)
     {
 	    s = ", and ";
+    }
+
+    else if (i < names.length - 2)
+    {
+	    s = ", ";
     }
     else 
     {
@@ -50,10 +56,10 @@ else
     }
   if (grades[i] >= min)
    {
-     console.log(names[i] + " has passed" + s);
+     console.log(names[i] + " has passed with a grade of " + grades[i] + s);
    }
    else {
-     console.log(names[i] + " has failed" + s);
+     console.log(names[i] + " has failed with a grade of " + grades[i] + s);
    }
  }
 }
